@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clínica</title>
+</head>
+<body>
+    <div id="encabezado">
+        <div id="menú">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="citas.html">Cita</a></li>
+              <li><a href="especialidades.html">Especialidades</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="quienes_somos.html">Quienes somos</a></li>
+              <li><a href="contactanos.html">Contactanos</a></li>
+              <p>Bienvenido , {{ session['username'] }}</p>
+              <form action="/logout"><button class="boton"  type="submit">Exit</button></form>
+            </ul> 
+        </div>
+        <div id="imagen">
+            <img src="img/servicios.jpg" width="90%" height="400px">
+        </div>
+        <br><H1>SERVICIOS</H1>
+        <br>
+        <div id="info">
+            <table>
+  <tr>
+    <td>Hospitalización</td>
+    <td>Unidad de emergencias</td>
+    <td>Quirofános</td>
+  </tr>
+  <tr>
+    <td><img src="img/hospitalizacion.jpg"width="100%" height="10%"></td>
+    <td><img src="img/ambulancias.jpg" width="40%" height="10%"></td>
+    <td><img src="img/quirofano.jpg" width="60%" height="10%"></td>
+  </tr>
+  <tr>
+    <td>Radiología</td>
+    <td>Enfermería</td>
+    <td>Laboratorio</td>
+  </tr>
+  <tr>
+    <td><img src="img/radiologia.jpg" width="100%" height="10%"></td>
+    <td><img src="img/enfermeria.jpg" width="40%" height="10%"></td>
+    <td><img src="img/laboratorio.jpg" width="60%" height="10%"></td>
+  </tr>
+        </div>
+    </div>
+</body>
+</html>

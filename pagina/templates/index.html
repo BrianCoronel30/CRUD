@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <title>Clínica</title>
+</head>
+<body>
+    <header>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="citas.html">Cita</a></li>
+        <li><a href="especialidades.html">Especialidades</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="quienes_somos.html">Quienes somos</a></li>
+        <li><a href="contactanos.html">Contactanos</a></li>
+        <p>Bienvenido , {{ session['username'] }}</p>
+        <form action="/logout"><button class="boton"  type="submit">Exit</button></form>
+      </ul> 
+    </header>
+        <div id="imagen">
+            <img src="/static/img/inicio.jpg" width="100%" height="500px">
+        </div>
+        <div id="info">
+        </div>
+            <table>
+  <tr>
+    <th>Unidad de emergencias</th>
+    <th>Horario de atención</th>
+  </tr>
+  <tr>
+    <td><img src="/static/img/emer.png" alt="50px"></td>
+    <td><img src="/static/img/reloj.png" width="20%" height="10%"></td>
+  </tr>
+  <tr>
+    <th>Unidad de atención de urgencias disponible las 24 horas</th>
+    <th>Servicio las 24 hrs.</th>
+  </tr>
+        </div>
+</body>
+</html>

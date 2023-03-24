@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clínica</title>
+</head>
+<body>
+    <div id="encabezado">
+        <div id="menú">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="citas.html">Cita</a></li>
+          <li><a href="especialidades.html">Especialidades</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="quienes_somos.html">Quienes somos</a></li>
+          <li><a href="contactanos.html">Contactanos</a></li>
+          <p>Bienvenido , {{ session['username'] }}</p>
+          <form action="/logout"><button class="boton"  type="submit">Exit</button></form>
+            </ul> 
+        </div>
+        <br><H1>ESPECIALIDADES</H1>
+        <br>
+        <div id="info">
+            <table>
+  <tr>
+    <td>Cardiología</td>
+    <td>Cirugía general</td>
+    <td>Dermatología</td>
+    <td>Odontología</td>
+  </tr>
+  <tr>
+    <td><img src="img/cardio.jpeg"width="100%" height="10%"></td>
+    <td><img src="img/cirugia.jpeg" width="100%" height="10%"></td>
+    <td><img src="img/derma.jpeg" width="100%" height="10%"></td>
+    <td><img src="img/odon.jpeg" width="100%" height="10%"></td>
+  </tr>
+  <tr>
+    <td>Medicina interna</td>
+    <td>Neumología</td>
+    <td>Neurología</td>
+    <td>Pediatría</td>
+  </tr>
+  <tr>
+    <td><img src="img/medicina inter.jpeg" width="100%" height="10%"></td>
+    <td><img src="img/neumo.jpeg" width="100%" height="10%"></td>
+    <td><img src="img/neuro.jpeg" width="100%" height="10%"></td>
+    <td><img src="img/pedia.jpeg" width="100%" height="10%"></td>
+  </tr>
+            </table>
+            <br>
+        </div>
+    </div>
+</body>
+</html> 

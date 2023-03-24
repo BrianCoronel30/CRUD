@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clínica</title>
+</head>
+<body>
+    <div id="encabezado">
+        <div id="menú">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="citas.html">Cita</a></li>
+                <li><a href="especialidades.html">Especialidades</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="quienes_somos.html">Quienes somos</a></li>
+                <li><a href="contactanos.html">Contactanos</a></li>
+                <p>Bienvenido , {{ session['username'] }}</p>
+                <form action="/logout"><button class="boton"  type="submit">Exit</button></form>
+            </ul> 
+        </div>
+        <div id="imagen">
+            <img src="img/nosotros.jpg" width="100%" height="600px">
+        </div>
+        <h1>¿QUIÉNES SOMOS?</h1>
+        <div class="nosotros">
+            <p>Somos una institución de asistencia privada no gubernamental, humanitaria, imparcial, neutral e independiente; que moviliza redes de voluntarios, comunidades y donantes para operar programas y servicios que tienen como objetivo el preservar la salud, la vida y aliviar el sufrimiento humano de la población en situación de vulnerabilidad.
+                <br>Damos especial énfasis a la prevención y al aumento de capacidades individuales y colectivas, para que los beneficiarios de nuestras acciones, se organicen socialmente, estén preparados y sean resilientes ante amenazas y adversidades.
+            </p>
+        </div>
+        <div id="info">
+            <table>
+  <tr>
+    <th>Objetivo</th>
+    <th>Misión</th>
+    <th>Visión</th>
+  </tr>
+  <tr>
+    <td><img src="img/objetivo.png"width="20%" height="10%"></td>
+    <td><img src="img/mision.png" width="20%" height="10%"></td>
+    <td><img src="img/vision.png" width="20%" height="10%"></td>
+  </tr>
+  <tr>
+    <th><p>Trabajar en conjunto con todos los sectores que integran el colectivo hospitalario, sosteniendo la horizontalidad de todas las profesiones de la salud y consolidando el trabajo interdisciplinario.</p></th>
+    <th><p>Otorgar atención médica de alta especialidad con calidad y seguridad, respaldada con personal y equipo altamente cualificado, comprometidos con la enseñanza y el desarrollo de investigación.</p></th>
+    <th><p>Ser la principal opción de salud hospitalaria en el estado de Chiapas, expandiendo nuestra labor a toda la república mexicana.</p></th>
+  </tr>
+        </div>
+    </div>
+</body>
+</html>

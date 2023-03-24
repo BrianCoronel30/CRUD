@@ -1,0 +1,12 @@
+abrer la terminal de VScode tienes que poner :
+    cd faker
+
+ahí poner en la terminal:
+    source env/bin/activate
+
+ya ahí instalar :
+    pip install flask
+    pip install faker
+
+ya solo para correr el codigo escribir:
+    python3 fakerservicio.py
